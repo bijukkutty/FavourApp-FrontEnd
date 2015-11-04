@@ -1,0 +1,19 @@
+<ion-view view-title="Favourforum">
+  <ion-content class="padding">
+    <div class="list card">
+      <div class="item item-divider">Recent Updates</div>
+      <div class="item item-body">
+        <ion-list>
+          <find html="{{promise}}" selector="#t1"></find>
+          <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="favourforum in favourforums"
+                    type="item-text-wrap"
+
+            <p>{{favourforum.favourMsg}}</p>
+            <i class="icon ion-chevron-right icon-accessory"></i>
+
+          </ion-item>
+        </ion-list>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
