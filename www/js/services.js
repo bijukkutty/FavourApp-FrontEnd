@@ -64,13 +64,6 @@ angular.module('starter.services', [])
   return {
     createforum: function () {
       var promise = $http.post('https://moonlit-buckeye-111306.appspot.com/rest/favour/queryfavours','');
-/*      promise.then(function(resp) {
-        alert('Success: ' + resp.data);
-       // $scope.favourforums = resp.data;
-        return resp.data;
-      }, function(reason) {
-        alert('Failed: ' + reason.data);
-      });*/
       return promise;
     }
     }
