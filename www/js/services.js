@@ -52,9 +52,9 @@ angular.module('starter.services', [])
       createFavour: function (favourInput) {
         var promise = $http.post('https://moonlit-buckeye-111306.appspot.com/rest/favour/persistfavour', favourInput);
         promise.then(function(resp) {
-        //  alert('Success: ' + resp.data);
+         alert('Success: ' + resp.data);
         }, function(reason) {
-         // alert('Failed: ' + reason.data);
+         alert('Failed: ' + reason.data);
         });
       }
     };
