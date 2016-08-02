@@ -7,7 +7,7 @@ angular.module('starter.controllers', [])
        $scope.favourforums = resp.data;
       return resp.data;
     }, function(reason) {
-     // alert('Failed: ' + reason.data);
+     // Test alert('Failed: ' + reason.data);
     });
     $scope.remove = function (favourforum) {
       Favourforums.remove(favourforum);
